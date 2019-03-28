@@ -1,3 +1,220 @@
 html {
-  background-color: black;
+  font-size: 16px;
+}
+
+/*-------- menu --------*/
+header {
+  background-color: white;
+  color: black;
+  height: 64px;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-self: center;
+  margin-left: 24px;
+  flex-grow: 1;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.logo span {
+  align-self: center;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin: auto 24px auto 24px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop ul li {
+  padding: 0 0 0 16px;
+}
+
+.mobile {
+  display: none;
+}
+
+/*-------- menu mobile --------*/
+@media only screen and (max-width: 520px) {
+  .logo {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    width: 100%;
+  }
+
+  .mobile ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .mobile ul li img {
+    height: 32px;
+  }
+}
+
+
+/*-------- banner --------*/
+.banner {
+  background-color: grey;
+  display: flex;
+  padding: 32px 24px 32px 24px;
+}
+
+.article {
+  width: 60%;
+}
+
+.article img {
+  width: 100%;
+}
+
+.content {
+  margin: auto 0 auto 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner h1 {
+}
+
+.banner h3 {
+}
+
+.cta {
+  background-color: red;
+  color: white;
+  width: 100px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 520px) {
+  .banner {
+    flex-direction: column;
+    padding: 0 0 0 0;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .content {
+    margin: 32px 16px 32px 16px;
+  }
+
+  .banner h3 {
+    margin-top: 32px;
+  }
+
+  .cta {
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+}
+
+
+/*-------- main --------*/
+.main {
+  background-color: blue;
+  display: flex;
+}
+
+.first {
+  width: 60%;
+  margin: 32px 24px 0 24px;
+}
+
+.first img {
+  width: 100%;
+}
+
+.first h2 {
+  margin-top: 32px;
+}
+
+.first p {
+  margin-top: 24px;
+}
+
+.column {
+  width: 40%;
+  background-color: red;
+}
+
+.image {
+  width: 35%;
+  height: auto;
+}
+
+.mini {
+  display: flex;
+  background-color: green;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.contenu {
+  width: 65%;
+  margin: auto 16px auto 16px;
+}
+
+.mob {
+  display: none;
+}
+
+.mini:nth-child(1n+3) {
+  background-color: grey;
+}
+
+@media only screen and (max-width: 520px) {
+  .first {
+    display: none;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .mini {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .mob {
+    display: block;
+  }
+
+  .mob img {
+    width: 100%;
+  }
 }

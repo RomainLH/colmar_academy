@@ -37,11 +37,11 @@ ul {
   justify-content: space-between;
 }
 
-.desktop ul li {
+.menu-desktop ul li {
   padding: 0 0 0 16px;
 }
 
-.mobile {
+.menu-mobile {
   display: none;
 }
 
@@ -51,22 +51,22 @@ ul {
     display: none;
   }
 
-  .desktop {
+  .menu-desktop {
     display: none;
   }
 
-  .mobile {
+  .menu-mobile {
     display: flex;
     width: 100%;
   }
 
-  .mobile ul {
+  .menu-mobile ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
 
-  .mobile ul li img {
+  .menu-mobile ul li img {
     height: 32px;
   }
 }
@@ -106,6 +106,7 @@ ul {
   height: 50px;
 }
 
+/*-------- banner mobile --------*/
 @media only screen and (max-width: 520px) {
   .banner {
     flex-direction: column;
@@ -139,20 +140,20 @@ ul {
   display: flex;
 }
 
-.first {
+.big-news {
   width: 60%;
   margin: 32px 24px 0 24px;
 }
 
-.first img {
+.big-news img {
   width: 100%;
 }
 
-.first h2 {
+.big-news h2 {
   margin-top: 32px;
 }
 
-.first p {
+.big-news p {
   margin-top: 24px;
 }
 
@@ -166,7 +167,7 @@ ul {
   height: auto;
 }
 
-.mini {
+.news {
   display: flex;
   background-color: green;
 }
@@ -181,20 +182,21 @@ ul {
   margin: auto 16px auto 16px;
 }
 
-.mob {
+.image-mobile {
   display: none;
 }
 
-.mini:nth-child(1n+3) {
+.news:nth-child(1n+3) {
   background-color: grey;
 }
 
+/*-------- main mobile --------*/
 @media only screen and (max-width: 520px) {
-  .first {
+  .big-news {
     display: none;
   }
 
-  .desk {
+  .image-desktop {
     display: none;
   }
 
@@ -202,7 +204,7 @@ ul {
     width: 100%;
   }
 
-  .mini {
+  .news {
     flex-direction: column;
   }
 
@@ -210,11 +212,14 @@ ul {
     width: 100%;
   }
 
-  .mob {
+  .image-mobile {
     display: block;
   }
 
-  .mob img {
+  .image-mobile img {
     width: 100%;
   }
 }
+
+
+/*-------- category --------*/

@@ -73,30 +73,35 @@ ul {
 
 
 /*-------- banner --------*/
-.banner {
+.box.banner {
   background-color: grey;
   display: flex;
   padding: 32px 24px 32px 24px;
 }
 
-.article {
+.image-content {
   width: 60%;
 }
 
-.article img {
+.image-content img {
   width: 100%;
 }
 
-.content {
+.column.test {
+  width: 40%;
+  background-color: orange;
+  margin: auto 0 auto 0;
+}
+
+.heading {
   margin: auto 0 auto 24px;
-  display: flex;
-  flex-direction: column;
 }
 
 .banner h1 {
 }
 
 .banner h3 {
+
 }
 
 .cta {
@@ -108,16 +113,16 @@ ul {
 
 /*-------- banner mobile --------*/
 @media only screen and (max-width: 520px) {
-  .banner {
+  .box.banner {
     flex-direction: column;
     padding: 0 0 0 0;
   }
 
-  .article {
+  .image-content {
     width: 100%;
   }
 
-  .content {
+  .heading {
     margin: 32px 16px 32px 16px;
   }
 
@@ -129,6 +134,11 @@ ul {
     width: 100%;
     text-align: center;
     margin-top: 24px;
+  }
+
+  .column.test {
+    width: 100%;
+    margin: auto 0 auto 0;
   }
 
 }
@@ -223,3 +233,103 @@ ul {
 
 
 /*-------- category --------*/
+.category {
+  background-color: grey;
+}
+
+.category h2 {
+  text-align: center;
+}
+
+.row-1, .row-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.course {
+  background-color: white;
+  width: 30%;
+  height: auto;
+}
+
+.course img {
+  width: 100%;
+}
+
+/*-------- category mobile --------*/
+@media only screen and (max-width: 520px) {
+  .category {
+    background-color: white;
+  }
+
+  .row-1 img, .row-2 img, .row-1 span, .row-2 span, .row-1 p, .row-2 p {
+    display: none;
+  }
+
+  .row-1, .row-2 {
+    flex-direction: column;
+  }
+
+  .course {
+    width: 100%;
+  }
+}
+
+
+/*-------- main-video --------*/
+.main-video {
+  background-color: yellow;
+}
+
+.contenu-video {
+  display: flex;
+}
+
+.big-article {
+  width: 60%;
+}
+
+.big-article video {
+  width: 100%;
+}
+
+.column-video {
+  width: 40%;
+}
+
+.miniature {
+  display: flex;
+}
+
+/*-------- main-video mobile --------*/
+@media only screen and (max-width: 520px) {
+  .column-video {
+    display: none;
+  }
+
+  .big-article {
+    width: 100%;
+  }
+}
+
+
+/*-------- footer --------*/
+footer {
+  display: flex;
+}
+
+.copyright {
+  flex-grow: 1;
+}
+
+.link {
+  border: 2px solid black;
+}
+
+/*-------- footer mobile --------*/
+@media only screen and (max-width: 520px) {
+  .link {
+    display: none;
+  }
+
+}

@@ -247,6 +247,7 @@ nav a:hover {
 .cta:hover {
   background-color: rgb(40, 40, 40);
   transition: color 0.5s linear;
+  transition: background-color 0.5s linear;
   color: white;
 }
 
@@ -371,6 +372,16 @@ nav a:hover {
   background-color: white;
   width: 100%;
   height: auto;
+}
+
+.course:hover {
+  box-shadow: 0.1rem 0.1rem 1.4rem rgb(180, 180, 180);
+  transition: box-shadow 0.3s linear;
+}
+
+.course img:hover {
+  filter: opacity(0.9);
+  transition: filter 0.3s linear;
 }
 
 .course:nth-child(0n+2) {
